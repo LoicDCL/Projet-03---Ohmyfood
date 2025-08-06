@@ -1,0 +1,203 @@
+/* ============================================================================================
+   BODY - paramètres de base
+============================================================================================ */
+html, body {
+  justify-items: center;
+  min-width: 320px;
+  width: 100%;
+  max-width: 768px;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+.fa-solid {
+  color: #7b7b7b;
+}
+
+/* ============================================================================================
+   Header - Logo
+============================================================================================ */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 6.25vw;
+  padding-bottom: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: white;
+}
+
+.back-button {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 45vw;
+  max-width: 200px;
+}
+/* ============================================================================================
+   Main - Restaurants
+============================================================================================ */
+
+.resto__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", serif;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.resto__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.fa-heart {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: black;
+}
+
+.resto__img {
+  width: 100%;
+}
+
+.resto__background {
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -50px;
+  padding: 2rem 1rem 5rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.starter h2,
+.main__course h2,
+.desserts h2 {
+  font-weight: 300;
+  font-size: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.starter h2::after,
+.main__course h2::after,
+.desserts h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin-top: 5px;
+}
+
+.meal__card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal__text h3 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.meal__text p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+  color: #7b7b7b;
+}
+
+.meal__price {
+  font-weight: bold;
+}
+
+.order_button {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.order_button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================================================
+   Footer
+============================================================================================ */
+footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 15vw;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  margin-left: 6vw;
+  margin-bottom: 0;
+}
+
+.footer__links {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  padding-left: 7vw;
+}
+
+.footer__prolink,
+.footer__partlink {
+  display: flex;
+  gap: 3vw;
+  align-items: baseline;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+  font-size: small;
+  color: white;
+}
+
+.fa-handshake-angle {
+  font-size: xx-small;
+}
