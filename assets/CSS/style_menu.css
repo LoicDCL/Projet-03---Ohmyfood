@@ -84,9 +84,9 @@ header {
   margin-top: 10vw;
 }
 
-.starter h2,
-.main__course h2,
-.desserts h2 {
+.starter h3,
+.main__course h3,
+.desserts h3 {
   font-weight: 300;
   font-size: 1rem;
   position: relative;
@@ -94,9 +94,9 @@ header {
   text-transform: uppercase;
 }
 
-.starter h2::after,
-.main__course h2::after,
-.desserts h2::after {
+.starter h3::after,
+.main__course h3::after,
+.desserts h3::after {
   content: "";
   display: block;
   width: 40px;
@@ -123,13 +123,16 @@ header {
 .meal__text{
   flex:1 1 auto;
   min-width:0;
+  display: flex;
+  flex-direction: column;
 }
-.meal__text h3{
+.meal__title {
   margin:0 0 .25rem 0;
-  font-size:1rem;
+  font-size:1.1rem;
   font-weight:700;
 }
-.meal__text p{
+.meal__desc {
+  font-size:0.9rem;
   margin:0;
   color:#555;
   white-space:nowrap;
@@ -290,7 +293,7 @@ footer a {
   .starter,
   .main__course,
   .desserts {
-    justify-self: anchor-center;
+    justify-self: center;
     width: 60%;
   }
 
