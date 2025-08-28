@@ -127,6 +127,7 @@ header {
 ============================================================================================ */
 .how-to__title {
   margin-left: 6vw;
+  font-size: 1.6em;
 }
 
 .how-to__card {
@@ -206,6 +207,7 @@ header {
   margin-bottom: 1vw;
   margin-top: 10vw;
   margin-left: 6vw;
+  font-size: 1.6em;
 }
 
 #restaurants {
