@@ -144,16 +144,28 @@
   height: 28px;
 }
 
+.meal__check .fa-check{
+  display: inline-block;
+  transform-origin: center;
+  transform: rotate(-360deg) scale(0.4);
+  opacity: 0;
+  transition: transform .45s cubic-bezier(.2,.9,.2,1), opacity   .25s ease;
+  transition-delay: .05s;
+}
+
+.meal__card:has(.meal-toggle:checked) .meal__check .fa-check{
+  transform: rotate(360deg) scale(1);
+  opacity: 1;
+}
+
 /* ============================================================================================
    Remplissage des coeurs
 ============================================================================================ */
 .resto-card__like-button {
   position: absolute;
-  top: 200px;
-  right: 25px;
+  bottom: 27%;
+  right: 5%;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
 }
 
 .resto-card__like-button input {
@@ -163,18 +175,11 @@
 .empty-heart {
   color: #7b7b7b;
   position: absolute;
-  top: 0;
-  left: 0;
   transition: opacity 1s ease;
-  width: 24px;
-  height: 24px;
 }
 
 .full-heart {
-  font-size: 24px;
   position: absolute;
-  top: 0;
-  left: 0;
   opacity: 0;
   transform: scale(0.5);
   transition: opacity 1s ease, transform 1s ease;
@@ -182,8 +187,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  width: 24px;
-  height: 24px;
 }
 
 .resto-card__like-button input:checked~.full-heart {
@@ -226,11 +229,8 @@
     position: absolute;
   }
 
-  .title__like-button {
-    top: 2.2vw;
-    left: 37vw;
-    position: absolute;
-    cursor: pointer;
+  .title__like-button input {
+    display: none;
   }
 
 }
