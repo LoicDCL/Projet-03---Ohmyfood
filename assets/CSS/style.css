@@ -472,6 +472,7 @@ footer a {
     display: flex;
     flex-direction: row;
     padding-top: 0vw;
+    padding-bottom: 2vw;
     justify-content: center;
   }
 
